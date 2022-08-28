@@ -46,5 +46,10 @@ nuvem_palavras.axis("off")
 nuvem_palavras.show()
 ###
 histori = plt
-histori.hist(lista_pontos, bins=10)
+histori.title("Histograma das Pontuações")
+histori.hist(lista_pontos, bins=10, density=True, facecolor="blue", alpha=0.75)
+histori.grid(True)
+histori.axis('on')
+histori.xlabel("Pontos")
+histori.ylabel("Probabilidades")
 histori.show()
